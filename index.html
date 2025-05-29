@@ -4,6 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+    table {
+      border-collapse: collapse;
+      width:100%;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      background-color: lightseagreen;
+    }
+    .rounded-table {
+      border-collapse: separate;
+      border: 2px solid #0a0a0a;
+      border-radius: 10px;
+      background-color: lightseagreen;
+    }
+    .rounded-table th, .rounded-table td {
+      border: 1px solid #0a0a0a;
+      background-color: lightseagreen;
+    }
+    .rounded-table td,.rounded-table th { 
+      border-radius:10px ;
+    }
+    .rounded-table td,.rounded-table th{
+      border-radius:10px ;
+    }
+    .a{
+        border: 1px solid black;
+        background-color: aliceblue;
+    }
+    .b{
+        border: 1px solid black;
+    }
+    </style>
 </head>
 <body>
     <p>List can be nested (listed inside list):</p>
@@ -16,5 +49,68 @@
         </ul>
         <li>Milk</li>   
     </ul>
+    <br>
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+        </tr>
+    </table>
+    <br>
+    <table class="rounded-table">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+        </tr>
+    </table>
+    <br>
+    <div class="a">
+    <p>Click any of the following links</p>
+    <a href="https://www.youtube.com/" target="_blank">Opens in new</a>
+    <span>|</span>
+    <a href="https://www.youtube.com/" target="_self">Opens in self</a>
+    <span>|</span>
+    <a href="https://www.youtube.com/" target="_parent">Opens in parent</a>
+    <span>|</span>
+    <a href="https://www.youtube.com/" target="_top">Opens in Body</a>
+    </div>
+    <br>
+    <div class="b" >
+    <h1><B>Link to an Email Address</B></h1>
+    <p>To Create a link that opens in the user's email program (to let them send a new email),use mailto;inside the attribute:</p>
+    <a href="https://mail.google.com/mail/u/0/?ogbl#inbox" target="_blank">Send email</a>
+    </div>
 </body>
 </html>
